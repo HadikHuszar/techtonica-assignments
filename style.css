@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fuggles&display=swap');
+
+:root {
+  font-size: 16px;
+  font-family: 'Muli', sans-serif;
+  --text-primary: #7a787a;
+  --text-secondary:  #4b0247;
+  --bg-primary: #4b0247;
+  --bg-secondary: #4b4b58; 
+  --transition-speed: 300ms;
+
+}
+
+h1 {
+  font-family: 'Fuggles', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 10vw;
+  line-height: 1.15;
+  color: rgba(0, 0, 0, 0.8);
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  color: rgba(0,0,0,0.6);
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #855683;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(123, 2, 134);
+}
+
+.navbar {
+  position: fixed;
+  background-color: white;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+  transition: width 200ms ease;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item {
+  width: 100;
+}
+
+.nav-item:last-child {
+  margin-top: auto;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+  filter: grayscale(0%) opacity(1);
+  background: var(--bg--secondary);
+  color: var(--text-secondary);
+}
+
+.link-text {
+  display: none;
+  margin-left: 1rem;
+}
+
+.nav-link svg {
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+
+.fa-primary {
+  color: rgb(118, 116, 119);
+}
+
+.fa-secondary {
+  color: rgb(123, 2, 134);
+}
+
+.fa-primary,
+.fa-secondary {
+  transition: var(--transition-speed);
+}
+
+.logo-text {
+  color: rgb(255, 255, 255);
+}
+
+.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  background: rgb(123, 2, 134);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3ch;
+  width: 100;
+}
+
+.logo svg {
+  transform: rotate(0deg);
+  transition: var(--transition-speed);
+}
+
+.navbar:hover .logo svg {
+  transform: rotate(-540deg);
+}
+
+/*  /////////////////////   SPINNING SOCIAL MEDIA ICONS   //////////////////////  */
+
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-size: 18px;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  color: #26a69a;
+  text-decoration: none;
+}
+
+/* -------------------------------- 
+
+Main Components 
+
+-------------------------------- */
+.icons-container{
+    height: 100px;
+    width: 500px;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    margin-top: 120px;
+    margin-left: -160px;
+}
+
+.social-icons .item {
+    display: inline-block;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    transition: .3s all;
+    position: relative;
+    -webkit-transition: .3s all;
+    text-align: center;
+    color: #fff;
+    background-color: #fff;
+    line-height: 48px;
+    border-radius: 50px;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+    box-shadow: 0px 5px 11px 0px rgba(0,0,0,0.18), 0px 4px 15px 0px rgba(0,0,0,0.15);
+}
+
+.social-icons.spinned .item:hover {
+    -webkit-animation: Social-Icons-Flipping .3s;
+    animation: Social-Icons-Flipping .3s
+}
+.social-icons .item:hover {
+    text-decoration: none;
+    background-color: #42474E;
+    box-shadow: 0 -1px 0 transparent inset, 0 2px 3px rgba(0, 0, 0, .1), 0 4px 8px rgba(0, 0, 0, .3);
+    color: #fff!important
+}
+.social-icons .item .fa {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.social-icons .facebook {
+    color: #425F9C!important
+}
+.social-icons .twitter {
+    color: #00ACEE!important
+}
+.social-icons .google {
+    color: #c00!important
+}
+.social-icons .linkedin {
+    color: #0073B2!important
+}
+.social-icons .youtube {
+    color: #EB3E40!important
+}
+.social-icons .instagram {
+    color: #5E8AAC!important
+}
+
+.facebook:hover {
+    background-color: #425F9C!important
+}
+.twitter:hover {
+    background-color: #00ACEE!important
+}
+.google:hover {
+    background-color: #c00!important
+}
+.linkedin:hover {
+    background-color: #0073B2!important
+}
+.youtube:hover {
+    background-color: #EB3E40!important
+}
+.instagram:hover {
+    background-color: #5E8AAC!important
+}
+
+@-webkit-keyframes Social-Icons-Flipping {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+@keyframes Social-Icons-Flipping {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+
+/*  /////////////////////   **** END *******  SPINNING SOCIAL MEDIA ICONS   //////////////////////  */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Large Screens */
+@media only screen and (min-width: 600px) {
+
+  main {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 1rem;
+  }
+
+  .navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+
+  .navbar:hover {
+    width: 16rem;
+  }
+
+  .navbar:hover .link-text {
+    display: block;
+    transition: opacity var(--transition-speed);
+  }
+}
+
+
+/* Small Screens */
+@media only screen and (max-width: 600px) {
+
+  main {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 1rem;
+  }
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 4rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+
+  .icons-container{
+    height: 100px;
+    width: 500px;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    margin-top: 30px;
+    margin-left: -160px;
+}
+
+
+  /*
+  .navbar:hover .link-text {
+    display: inline;
+    transition: opacity var(--transition-speed);
+  }
+   */
+
+}
