@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ELIZABETH'S COIN FLIP</title>
+    <!--  The jQuery library is a single JavaScript file, and you reference it with the HTML.-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    
+      <div id="title"><br><br><br><br><h1>How Lucky Are You Feeling Today?</h1></div>
+
+
+    <div id="coin-flip-cont">
+  
+        <div id="coin">
+
+            <div class="front">
+                <img src="./media/pennyFront.png" onClick="play()" alt="Image of the Front of a Penny">
+                <!-- <br>
+                <br>
+                <br>
+                <br>
+                <h3 id="result">Heads</h1> -->
+            </div>
+    
+            <div class="back">
+                <img src="./media/pennyBack.png" onClick="play()"  alt="Image of the Back of a Penny">
+                <!-- <br>
+                <br>
+                <br>
+                <br>
+                <h3 id="result">Tails</h1> -->
+
+            </div>
+
+        </div>
+    
+    </div>
+    <audio id="audio" src="./media/SpinningCoinLouder.mp3" ></audio>
+
+  </body>
+  <script src="./main.js"></script>
+</html>
+
