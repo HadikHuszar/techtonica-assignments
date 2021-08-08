@@ -7,8 +7,18 @@ html, body {
 
     h1 {
     text-align: center;
-    color: white;
+    color: rgb(206, 131, 73);
     
+    }
+
+    h3 {
+    text-align: center;
+    color: rgb(245, 214, 175);
+    }
+
+    #coin-flip-result {
+    text-align: center;
+    color: whitesmoke;
     }
     
     #coin-flip-cont {
@@ -36,14 +46,14 @@ html, body {
     transform: translateZ(1px);
     border-radius: 50%;
     background-color: #3498db;
-    text-align: center;
+    text-align: left;
     }
     
     #coin .back {
     transform: translateZ(-1px) rotateY(180deg);
     border-radius: 50%;
     background-color: #2ecc71;
-    text-align: center;
+    text-align: left;
     }
     
     #coin.animation900 {
