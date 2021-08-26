@@ -1,0 +1,44 @@
+<!-- <link rel="stylesheet" href="http://localhost:3000/styles.css"> -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+    h1 {
+        font-family: 'Architects Daughter', cursive;
+        /* font-weight: 700;
+        font-style: normal;
+        font-size: 38px;
+        line-height: 1.15;
+        letter-spacing: -.02em;
+        color: rgba(0, 0, 0, 0.8);
+        -webkit-font-smoothing: antialiased; */
+      }
+</style>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+
+
+
+<div class="container">
+    <hr>
+    <h1 style="color:blue;">Add New Book</h1>
+    <hr>
+
+    <form action="http://localhost:3000/book" method="POST">
+        <div class="form-group">
+            <label for="ISBN">ISBN</label>
+            <input class="form-control" name="isbn">
+        </div>
+
+        <div class="form-group">
+            <label for="Title">Title</label>
+            <input class="form-control" name="title">
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+
+</div>
