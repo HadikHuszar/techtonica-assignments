@@ -1,16 +1,12 @@
 import React, { useState } from 'react';
 
-
 const api = {
   key: "59356a48f5521dad3d8822085b0c8bc9",
   base: "https://api.openweathermap.org/data/2.5/"
 }
 
-// const iconurl = "http://openweather.org/img/w/01d.png"
-
 
 function App() {
-
 
   const [query, setQuery] = useState('');
   const [weather, setWeather] = useState({});
@@ -66,7 +62,7 @@ function App() {
     let month = months[d.getMonth()];
     let year = d.getFullYear();
 
-    return `${day} • ${date} ${month}, ${year}`
+    return `${day} ${date} ${month} ${year}`
 
   }
 
@@ -85,7 +81,7 @@ function App() {
           <input 
             type="text"
             className="search-bar"
-            placeholder="Please Enter a City for a Weather Update..."
+            placeholder="Please Enter a City..."
             onChange={e => setQuery(e.target.value)}
             value={query}
             // onKeyPress={(e) => search(e) 
@@ -103,21 +99,16 @@ function App() {
             <div className="date">{ dateConverter(weather[0].dt) }</div>
           </div>
           <div className="weather-box">
-            {/* <div className={(weatherInfo.temp.day > 80) ? 'temp-hot' : 'temp'}> */}
             <div className="temp">
                 {Math.floor(weather[0].temp.day)}°F
               </div>
               <div className="weather">{weather[0].weather[0].main}</div>
-              <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><h1>5-DAY FORECAST</h1>
-              <div className="forecast">
-                {weather.slice(1,6).map(weatherInfo => {
+              <div>
+                {weather.map(weatherInfo => {
                   return (
               <div>
                   <div className="date">{dateConverter(weatherInfo.dt)}</div>
-                  <div className="temp">
-                    <img src="http://openweathermap.org/img/w/02d.png"></img>
-                    {Math.floor(weatherInfo.temp.day)}°F </div>
-                  <div> </div>
+                  <div className="temp">{Math.floor(weatherInfo.temp.day)}F</div>
               </div>
                   )
                 })
