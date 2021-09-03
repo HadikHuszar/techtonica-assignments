@@ -54,6 +54,8 @@ export default function App() {
 	}, [] )
 
 //////////////// RENDERING OF THE APP //////////////////////////
+
+
 //// something to do while there is no data
 
 	if (questions.length === 0) {
@@ -63,6 +65,9 @@ export default function App() {
 			</div>
 		)
 	}
+
+
+////// the actual rendering of the app in the front-end /////////
 
 	return (
 		<div className='app'>
