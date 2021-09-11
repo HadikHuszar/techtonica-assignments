@@ -1,0 +1,61 @@
+.font-link {
+  font-family: "Heebo", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Spartan", sans-serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(238, 232, 241);
+  color: rgb(52, 32, 71);
+}
+
+h1 {
+  font-family: "Heebo", sans-serif;
+  font-size: 55px;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+}
+
+h3 {
+  font-family: "Oswald", sans-serif;
+  color: rgb(76, 66, 85);
+}
+
+fieldset {
+  border: none;
+  margin: 1rem 0;
+}
+
+header {
+  /* For more about flexbox, see https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+  display: flex;
+  align-items: center;
+  margin-top: -2em;
+}
+
+header img {
+  height: 64px;
+  margin-right: 1em;
+  margin-top: -1em;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -1em;
+}
+
+aside {
+  margin-left: 2em;
+}
+
+footer {
+  font-family: monospace;
+  margin-top: 3rem;
+  font-size: small;
+  color: gray;
+}
