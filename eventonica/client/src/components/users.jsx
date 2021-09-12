@@ -24,16 +24,16 @@ const Users = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const newUser = { id: id, name: name, email: email };
+    // const newUser = { id: id, name: name, email: email };
+    const newUser = { name: name, email: email, id: id };
     fetch("http://localhost:3001/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(newUser),
-    })
-      .then((res) => res.json())
-      .then((res) => setUsers([...users, newUser]));
+    }).then((res) => res.json());
+    // .then((res) => setUsers([...users, newUser]));
     // setUsers([...users, newUser]);
     setName("");
     setId("");

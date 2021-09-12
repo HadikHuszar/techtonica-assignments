@@ -1,4 +1,23 @@
 const userRouter = require("./routes/users");
+// var pgp = require("pg-promise")(/* options */);
+// var db = pgp("postgres://postgres@localhost:5432/eventonica");
+
+// db.many("SELECT * FROM public.users")
+//   .then(function (data) {
+//     console.log("DATA:", data);
+//   })
+//   .catch(function (error) {
+//     console.log("ERROR:", error);
+//   });
+
+// db.many("SELECT * FROM public.users")
+//   .then((data) => {
+//     console.log("DATA from Users.js", data);
+//     // res.json(data);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
 
 const express = require("express");
 
