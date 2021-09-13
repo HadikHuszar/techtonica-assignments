@@ -26,11 +26,11 @@ function App() {
             <h3>Find Events</h3>
             <form id="search" action="#">
               <fieldset>
-                <label htmlFor="date-search">Date</label>
+                <label htmlFor="date-search">Date </label>
                 <input type="text" id="date-search" placeholder="YYYY-MM-DD" />
               </fieldset>
               <fieldset>
-                <label htmlFor="category-search">Category</label>
+                <label htmlFor="category-search">Category </label>
                 <input type="text" id="category-search" />
               </fieldset>
 

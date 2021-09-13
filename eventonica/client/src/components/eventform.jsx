@@ -43,7 +43,8 @@ const EventForm = (props) => {
           <label>Name </label>
           <input
             type="text"
-            placeholder="Virtual Corgi Meetup"
+            id="add-event-name"
+            placeholder="enter Event Name"
             value={state.name}
             onChange={(e) =>
               dispatch({
@@ -63,7 +64,8 @@ const EventForm = (props) => {
           <label>Description </label>
           <input
             type="text"
-            placeholder="Enter description here"
+            id="add-event-description"
+            placeholder="enter Description here"
             value={state.description}
             onChange={(e) =>
               dispatch({
@@ -99,7 +101,7 @@ const EventForm = (props) => {
           <input
             type="text"
             id="add-event-image"
-            placeholder="Enter image here"
+            placeholder="enter Image here"
           />
         </fieldset>
 

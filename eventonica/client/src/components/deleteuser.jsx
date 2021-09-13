@@ -14,6 +14,7 @@ function DeleteUser(props) {
             }}
             type="text"
             id="delete-user-id"
+            placeholder="enter User ID here"
           />
         </fieldset>
         {/* <input type="submit" /> */}

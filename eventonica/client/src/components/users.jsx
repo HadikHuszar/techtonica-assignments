@@ -76,6 +76,7 @@ const Users = (props) => {
             <input
               type="text"
               id="add-user-name"
+              placeholder="enter User Name here"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
@@ -87,6 +88,7 @@ const Users = (props) => {
             <input
               type="text"
               id="add-user-id"
+              placeholder="enter User ID here"
               value={id}
               onChange={(e) => setId(e.target.value)}
             />
@@ -98,6 +100,7 @@ const Users = (props) => {
             <input
               type="email"
               id="add-user-email"
+              placeholder="enter User eMail here"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
